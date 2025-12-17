@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин с категориями</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Мой магазин</h1>
+        <p>Выберите категорию товаров:</p>
+        <div class="categories">
+            <button onclick="filterProducts('all')">Все</button>
+            <button onclick="filterProducts('tshirt')">Футболки</button>
+            <button onclick="filterProducts('mug')">Кружки</button>
+            <button onclick="filterProducts('accessory')">Аксессуары</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="products">
+
+            <!-- Товар 1 -->
+            <div class="product" data-category="tshirt">
+                <img src="img/tshirt1.jpg" alt="Футболка 1">
+                <h2>Футболка 1</h2>
+                <p>Описание футболки</p>
+                <p class="price">Цена: 1200₽</p>
+                <a href="https://www.paypal.com/paypalme/ВАШ_АККАУНТ/1200" target="_blank" class="buy-button">Купить</a>
+            </div>
+
+            <!-- Товар 2 -->
+            <div class="product" data-category="mug">
+                <img src="img/mug1.jpg" alt="Кружка 1">
+                <h2>Кружка 1</h2>
+                <p>Описание кружки</p>
+                <p class="price">Цена: 800₽</p>
+                <a href="https://www.paypal.com/paypalme/ВАШ_АККАУНТ/800" target="_blank" class="buy-button">Купить</a>
+            </div>
+
+            <!-- Товар 3 -->
+            <div class="product" data-category="accessory">
+                <img src="img/accessory1.jpg" alt="Аксессуар 1">
+                <h2>Аксессуар 1</h2>
+                <p>Описание аксессуара</p>
+                <p class="price">Цена: 500₽</p>
+                <a href="https://www.paypal.com/paypalme/ВАШ_АККАУНТ/500" target="_blank" class="buy-button">Купить</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Контакты: your_email@example.com</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
